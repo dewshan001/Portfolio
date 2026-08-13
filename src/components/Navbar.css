@@ -1,0 +1,120 @@
+/* Navbar Container */
+.navbar-liquid {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  pointer-events: none; /* Let clicks pass through outside the panel */
+}
+
+/* The actual floating glass panel */
+.liquid-glass-panel {
+  pointer-events: auto; /* Enable clicks inside the panel */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  width: 95%;
+  max-width: 1200px;
+  border-radius: 50px; /* Pill shape */
+  
+  /* True Liquid Glass Look */
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 255, 255, 0.05) 0%, 
+    rgba(6, 182, 212, 0.1) 50%, 
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  background-size: 200% 200%;
+  animation: liquidGradient 5s ease infinite;
+  
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  
+  box-shadow: 
+    0 8px 32px 0 rgba(0, 0, 0, 0.4),
+    inset 0 0 20px rgba(6, 182, 212, 0.15);
+}
+
+@keyframes liquidGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  color: var(--accent-primary);
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.6);
+}
+
+.nav-links a:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.5);
+  box-shadow: 0 0 10px var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  .liquid-glass-panel {
+    width: 95%;
+    padding: 10px 15px;
+  }
+  
+  .nav-links {
+    gap: 12px;
+  }
+  
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+}

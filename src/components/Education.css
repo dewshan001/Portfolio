@@ -1,0 +1,87 @@
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  align-items: flex-start;
+}
+
+.timeline-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.timeline-content .institution {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.timeline-content .date {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.certification-item {
+  display: flex;
+  gap: 25px;
+  padding: 30px;
+  align-items: center;
+}
+
+.cert-icon {
+  flex-shrink: 0;
+}
+
+.certification-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.certification-item .date {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.cert-link {
+  display: inline-block;
+  color: var(--text-primary);
+  text-decoration: underline;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.cert-link:hover {
+  color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+}

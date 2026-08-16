@@ -40,7 +40,7 @@ const AbstractGeometry = () => {
 
 const ThreeBackground = () => {
   return (
-    <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -2, background: '#020617' }}>
+    <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -2, background: '#020617', isolation: 'isolate' }}>
       <Canvas camera={{ position: [0, 0, 15], fov: 60 }}>
         <fog attach="fog" args={['#020617', 10, 25]} />
         <AbstractGeometry />

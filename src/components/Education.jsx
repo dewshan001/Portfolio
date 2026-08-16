@@ -78,37 +78,37 @@ const Education = () => {
 
         <motion.div 
           className="certifications-list"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
         >
-          <div className="certification-item glass-panel liquid-effect">
+          <motion.div variants={itemVariants} className="certification-item glass-panel liquid-effect">
             <Award size={32} className="text-accent cert-icon" />
             <div>
               <h3>Certificate in AI/ML Engineer - SLIIT (Stage 1)</h3>
               <span className="date text-accent">2026</span>
               <a href="https://code.sliit.org/certificates/s2u1kfl68e" target="_blank" rel="noopener noreferrer" className="cert-link">View Credential</a>
             </div>
-          </div>
+          </motion.div>
           
-          <div className="certification-item glass-panel liquid-effect">
+          <motion.div variants={itemVariants} className="certification-item glass-panel liquid-effect">
             <Award size={32} className="text-accent cert-icon" />
             <div>
               <h3>Intro to Machine Learning - Kaggle</h3>
               <span className="date text-accent">2024</span>
               <a href="https://www.kaggle.com/learn/certification/dewshangunawardhana/intro-to-machine-learning" target="_blank" rel="noopener noreferrer" className="cert-link">View Credential</a>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="certification-item glass-panel liquid-effect">
+          <motion.div variants={itemVariants} className="certification-item glass-panel liquid-effect">
             <Award size={32} className="text-accent cert-icon" />
             <div>
               <h3>Pandas - Kaggle</h3>
               <span className="date text-accent">2024</span>
               <a href="https://www.kaggle.com/learn/certification/dewshangunawardhana/pandas" target="_blank" rel="noopener noreferrer" className="cert-link">View Credential</a>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import './Skills.css';
 const skillCategories = [
   {
     title: "Programming & Web",
-    skills: ["Java", "Python", "JavaScript", "HTML", "CSS", "XML", "JavaFX", "OOP"]
+    skills: ["Java", "Python", "JavaScript", "HTML", "CSS", "XML", "JavaFX", "OOP", "C#", "C++", "Dart"]
   },
   {
     title: "Data & AI / ML",
@@ -13,11 +13,11 @@ const skillCategories = [
   },
   {
     title: "Frameworks & Tools",
-    skills: ["React", "React Native", "Expo", "Postman", "Spring Boot", "Node.js"]
+    skills: ["React", "React Native", "Expo", "Postman", "Spring Boot", "Node.js", "Git", "GitHub"]
   },
   {
     title: "Databases",
-    skills: ["MSSQL", "SQL", "MongoDB", "SQLite"]
+    skills: ["MSSQL", "SQL", "MongoDB", "SQLite", "PostgreSQL"]
   }
 ];
 

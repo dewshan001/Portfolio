@@ -5,6 +5,14 @@ import './Projects.css';
 
 const projectsList = [
   {
+    title: "VitroFit - Your fitness journey, everywhere on web and mobile.",
+    date: " August 2026 - Present ",
+    description: "A Comprehensive Fitness Platform for Everyone.",
+    tech: ["React", "Javascript", "Dart", "CSS", "C#", "C++", "Python"],
+    github: "https://github.com/dewshan001/VitroFit.git",
+    demo: "#"
+  },
+  {
     title: "Web-Based Agriculture Community Management",
     date: "Feb 2026 - Mar 2026",
     description: "AI-based platform connecting farmers with experts, featuring an AI chatbot and image-analysis for crop leaf disease detection. Includes comprehensive admin modules.",

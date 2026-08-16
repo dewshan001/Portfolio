@@ -91,6 +91,24 @@ const Education = () => {
               <a href="https://code.sliit.org/certificates/s2u1kfl68e" target="_blank" rel="noopener noreferrer" className="cert-link">View Credential</a>
             </div>
           </div>
+          
+          <div className="certification-item glass-panel liquid-effect">
+            <Award size={32} className="text-accent cert-icon" />
+            <div>
+              <h3>Intro to Machine Learning - Kaggle</h3>
+              <span className="date text-accent">2024</span>
+              <a href="https://www.kaggle.com/learn/certification/dewshangunawardhana/intro-to-machine-learning" target="_blank" rel="noopener noreferrer" className="cert-link">View Credential</a>
+            </div>
+          </div>
+
+          <div className="certification-item glass-panel liquid-effect">
+            <Award size={32} className="text-accent cert-icon" />
+            <div>
+              <h3>Pandas - Kaggle</h3>
+              <span className="date text-accent">2024</span>
+              <a href="https://www.kaggle.com/learn/certification/dewshangunawardhana/pandas" target="_blank" rel="noopener noreferrer" className="cert-link">View Credential</a>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -45,6 +45,12 @@
   font-weight: 600;
 }
 
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .certification-item {
   display: flex;
   gap: 25px;

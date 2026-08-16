@@ -17,7 +17,7 @@ const skillCategories = [
   },
   {
     title: "Databases",
-    skills: ["MSSQL", "SQL", "MongoDB"]
+    skills: ["MSSQL", "SQL", "MongoDB", "SQLite"]
   }
 ];
 
@@ -43,7 +43,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills-section section-container">
-      <motion.h2 
+      <motion.h2
         className="section-title"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -51,8 +51,8 @@ const Skills = () => {
       >
         Technical <span className="text-accent">Skills</span>
       </motion.h2>
-      
-      <motion.div 
+
+      <motion.div
         className="skills-grid"
         variants={containerVariants}
         initial="hidden"

@@ -35,6 +35,38 @@ const projectsList = [
     tech: ["Java", "Spring Boot", "JavaScript", "HTML/CSS"],
     github: "https://github.com/chamith2435/OOP-Project-Group-6",
     demo: "#"
+  },
+  {
+    title: "EduHub - Gamified Learning Platform",
+    date: "June 2025 - September 2025",
+    description: "A comprehensive educational platform with gamified learning, interactive quizzes, and progress tracking, built for enhanced student engagement.",
+    tech: ["React Native", "Expo Router", "React Hooks", "Node.Js", "MongoDB"],
+    github: "https://github.com/Vishwa633/EduHub",
+    demo: "#"
+  },
+  {
+    title: 'EcoManage - Smart Garbage Management System',
+    date: 'August 2025 - September 2025',
+    description: 'A comprehensive garbage management system that connects garbage collectors with residents, featuring a smart garbage bin tracking system and a waste management dashboard.',
+    tech: ['React', 'Node.js', 'SQLite'],
+    github: 'https://github.com/SupunThk/EcoManage.git',
+    demo: '#'
+  },
+  {
+    title: 'EcoManage - Mobile Application',
+    date: 'August 2026 - September 2026',
+    description: 'A mobile application that connects garbage collectors with residents, featuring a smart garbage bin tracking system and a waste management dashboard.',
+    tech: ['React Native', 'Expo Router', 'Node.Js', 'MongoDB', 'Cloudinary'],
+    github: 'https://github.com/dewshan001/EcoManage_App',
+    demo: '#'
+  },
+  {
+    title: 'NexusHealth - Small Clinic Management System',
+    date: 'October 2025 - November 2025',
+    description: 'A comprehensive clinic management system that connects doctors with patients, featuring a smart appointment scheduling system and a patient management dashboard.',
+    tech: ['Java', 'HTML', 'CSS', 'Java', 'MSSQL'],
+    github: 'https://github.com/dewshan001/NexusHealth.git',
+    demo: '#'
   }
 ];
 

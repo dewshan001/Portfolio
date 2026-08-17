@@ -89,5 +89,18 @@
 @media (max-width: 768px) {
   .timeline-item {
     flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .certification-item {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .certification-item h3 {
+    font-size: 1.1rem;
   }
 }

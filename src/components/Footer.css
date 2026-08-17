@@ -58,3 +58,25 @@
   color: var(--text-secondary);
   font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+  .footer-title {
+    font-size: 1.8rem;
+  }
+
+  .footer-description {
+    font-size: 0.95rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .contact-link {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}

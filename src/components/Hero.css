@@ -117,8 +117,13 @@
     flex-direction: column-reverse;
     text-align: center;
     padding-top: 150px;
+    gap: 20px;
   }
-  
+
+  .hero-content {
+    max-width: 100%;
+  }
+
   .hero-cta {
     justify-content: center;
   }
@@ -126,6 +131,40 @@
   .profile-image-wrapper {
     width: 250px;
     height: 250px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 120px;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-role {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .profile-image-wrapper {
+    width: 200px;
+    height: 200px;
   }
 }

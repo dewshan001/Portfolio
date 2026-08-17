@@ -100,3 +100,34 @@
 .btn-github:hover {
   background: var(--glass-border);
 }
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    padding: 22px;
+  }
+
+  .projects-subtitle {
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-project {
+    width: 100%;
+  }
+}

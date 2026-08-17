@@ -75,7 +75,14 @@
 
 @media (max-width: 768px) {
   .tilt-container {
-    width: 280px;
-    height: 380px;
+    width: 260px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tilt-container {
+    width: 220px;
+    height: 300px;
   }
 }
